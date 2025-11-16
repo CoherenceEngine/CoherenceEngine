@@ -21,7 +21,7 @@
       --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
       --max-width: 1120px;
       --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "SF Pro", "Segoe UI", sans-serif;
+        "Segoe UI", sans-serif;
     }
 
     * {
@@ -82,18 +82,22 @@
       gap: 10px;
     }
 
-    .brand-mark {
+    .brand-logo {
       width: 32px;
       height: 32px;
       border-radius: 999px;
       border: 2px solid var(--gold);
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--gold);
       box-shadow: 0 0 18px rgba(212, 175, 55, 0.6);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .brand-text-main {
@@ -157,15 +161,6 @@
       align-items: center;
     }
 
-    .hero-logo-img {
-      width: 200px;
-      max-width: 65%;
-      height: auto;
-      display: block;
-      margin: 0 0 18px 0;
-      filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.28));
-    }
-
     .eyebrow {
       font-size: 11px;
       letter-spacing: 0.16em;
@@ -190,17 +185,7 @@
     .hero-metric {
       font-size: 13px;
       color: var(--gold-soft);
-      margin-bottom: 10px;
-    }
-
-    .hero-pricing {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .hero-pricing strong {
-      color: var(--gold-soft);
+      margin-bottom: 22px;
     }
 
     .hero-actions {
@@ -451,23 +436,6 @@
       color: var(--muted);
     }
 
-    .license-cta {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 11px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(212, 175, 55, 0.7);
-      color: var(--gold-soft);
-      text-decoration: none;
-      background: rgba(5, 6, 8, 0.7);
-    }
-
-    .license-cta:hover {
-      border-color: #f5d46a;
-      color: #f5d46a;
-    }
-
     .contact-block {
       margin-top: 12px;
       font-size: 12px;
@@ -478,251 +446,6 @@
       color: var(--gold-soft);
     }
 
-    /* Demo / UX section */
-
-    .demo-grid {
-      align-items: stretch;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-    }
-
-    .demo-shell {
-      background: radial-gradient(circle at top, #1a2130, #050608);
-      border-radius: 22px;
-      border: 1px solid rgba(212, 175, 55, 0.32);
-      box-shadow: var(--shadow-soft);
-      padding: 10px 10px 14px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .demo-shell-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 6px 10px 10px;
-    }
-
-    .demo-shell-dots {
-      display: flex;
-      gap: 6px;
-    }
-
-    .demo-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-    }
-
-    .demo-shell-title {
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    .demo-shell-env {
-      font-size: 10px;
-      color: var(--gold-soft);
-      padding: 3px 7px;
-      border-radius: 999px;
-      border: 1px solid rgba(212, 175, 55, 0.6);
-      background: rgba(5, 6, 8, 0.85);
-    }
-
-    .demo-main-body {
-      background: rgba(5, 6, 8, 0.85);
-      border-radius: 16px;
-      padding: 12px 12px 10px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .demo-top-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .demo-top-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .demo-system-name {
-      font-size: 12px;
-    }
-
-    .demo-pill {
-      font-size: 10px;
-      padding: 3px 7px;
-      border-radius: 999px;
-      border: 1px solid rgba(120, 200, 120, 0.9);
-      color: #9af5b1;
-      display: inline-block;
-      background: rgba(5, 18, 10, 0.8);
-    }
-
-    .demo-coherence-score {
-      text-align: right;
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    .demo-coherence-value {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--gold-soft);
-    }
-
-    .demo-coherence-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-    }
-
-    .demo-kpis {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .demo-kpi-card {
-      border-radius: 10px;
-      padding: 8px 9px;
-      background: linear-gradient(135deg, #0c1118, #050608);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .demo-kpi-label {
-      font-size: 10px;
-      color: var(--muted);
-      margin-bottom: 2px;
-    }
-
-    .demo-kpi-value {
-      font-size: 13px;
-      color: var(--gold-soft);
-      font-weight: 500;
-    }
-
-    .demo-kpi-sub {
-      font-size: 10px;
-      color: var(--muted);
-    }
-
-    .demo-lower-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.2fr);
-      gap: 10px;
-    }
-
-    .demo-chart {
-      border-radius: 10px;
-      padding: 9px;
-      background: radial-gradient(circle at top, #182234, #050608);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .demo-chart-title {
-      font-size: 11px;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-
-    .demo-chart-bars {
-      height: 74px;
-      border-radius: 8px;
-      background:
-        linear-gradient(to right, rgba(212, 175, 55, 0.16), transparent),
-        repeating-linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0.08) 0,
-          rgba(255, 255, 255, 0.08) 1px,
-          transparent 1px,
-          transparent 16px
-        );
-      position: relative;
-      overflow: hidden;
-    }
-
-    .demo-chart-line {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 16px;
-      height: 2px;
-      background: linear-gradient(to right, rgba(212, 175, 55, 0.9), transparent);
-      opacity: 0.9;
-    }
-
-    .demo-chart-note {
-      font-size: 10px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    .demo-list {
-      border-radius: 10px;
-      padding: 9px;
-      background: #05070b;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .demo-list-title {
-      font-size: 11px;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-
-    .demo-list-item {
-      font-size: 11px;
-      color: var(--muted);
-      padding: 5px 4px;
-      border-radius: 6px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .demo-list-item:nth-child(odd) {
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .demo-list-tag {
-      font-size: 10px;
-      padding: 2px 6px;
-      border-radius: 999px;
-      border: 1px solid rgba(212, 175, 55, 0.5);
-      color: var(--gold-soft);
-    }
-
-    .demo-side {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .demo-side-card {
-      background: var(--card);
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      padding: 14px 14px 12px;
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
-    }
-
-    .demo-side-title {
-      font-size: 13px;
-      margin-bottom: 6px;
-    }
-
-    .demo-side-text {
-      font-size: 11px;
-      color: var(--muted);
-    }
-
     footer {
       border-top: 1px solid rgba(212, 175, 55, 0.18);
       background: #050608;
@@ -731,6 +454,8 @@
     }
 
     .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
       padding: 18px 20px;
       display: flex;
       justify-content: space-between;
@@ -742,6 +467,92 @@
       white-space: nowrap;
     }
 
+    /* ========= DEMO SECTION STYLES (video + PDF) ========= */
+    .demo-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .demo-card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .demo-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .demo-text {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+
+    .demo-side-card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 16px 16px 14px;
+      box-shadow: var(--shadow-soft);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .demo-side-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gold-soft);
+      margin-bottom: 6px;
+    }
+
+    .demo-side-text {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .license-cta {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--gold-soft);
+      font-size: 12px;
+      color: var(--gold);
+      background: transparent;
+    }
+
+    .license-cta:hover {
+      border-color: #f5d46a;
+      color: #f5d46a;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      background: #000;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     @media (max-width: 900px) {
       .hero-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -751,8 +562,7 @@
         grid-template-columns: minmax(0, 1fr);
       }
 
-      .grid-2,
-      .demo-grid {
+      .grid-2 {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -764,7 +574,7 @@
         margin-left: auto;
       }
 
-      .demo-lower-grid {
+      .demo-wrapper {
         grid-template-columns: minmax(0, 1fr);
       }
     }
@@ -775,16 +585,18 @@
   <header>
     <div class="nav-inner">
       <div class="brand">
-        <div class="brand-mark">Δ</div>
+        <div class="brand-logo">
+          <img src="coherence-logo.png" alt="Δ.72 Coherence Engine logo" />
+        </div>
         <div>
           <div class="brand-text-main">Δ.72 Coherence Engine™</div>
           <div class="brand-text-sub">Coherence diagnostics, margin recovery, system alignment</div>
         </div>
       </div>
       <nav class="nav-links">
-        <a href="#demos">Demos</a>
         <a href="#how">How it works</a>
         <a href="#use-cases">Use cases</a>
+        <a href="#demo">Demo</a>
         <a href="#licensing">Licensing</a>
       </nav>
       <a href="#contact" class="nav-cta">Request license</a>
@@ -796,7 +608,6 @@
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <img src="coherence-logo.png" alt="Δ.72 Coherence Engine Logo" class="hero-logo-img">
           <div class="eyebrow">Patent pending coherence engine</div>
           <h1>Reveal hidden incoherence, recover margin, align the system.</h1>
           <p class="subhead">
@@ -806,18 +617,12 @@
           <div class="hero-metric">
             Early audits show companies recovering <strong>8–28 percent annual margin</strong> by resolving incoherence surfaced by the Engine.
           </div>
-          <div class="hero-pricing">
-            Developer License: <strong>$1,111 / year</strong> or <strong>$3,333 lifetime</strong> (limited early access tier).
-          </div>
           <div class="hero-actions">
-            <a
-              class="btn-primary"
-              href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Developer%20License&body=Hi%20AshaRei,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20Developer%20License%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ASystem%20size%20(approx):%0D%0APreferred%20option:%20$1,111%20annual%20/%20$3,333%20lifetime.%0D%0A%0D%0AThank%20you."
-            >
-              Request Developer License
+            <a class="btn-primary" href="#contact">
+              Request licensing details
             </a>
-            <a class="btn-ghost" href="#demos">
-              View live UX demo
+            <a class="btn-ghost" href="#how">
+              View how the Engine works
             </a>
           </div>
           <p class="hero-note">
@@ -854,131 +659,55 @@
       </div>
     </section>
 
-    <!-- Demos / UX -->
-    <section id="demos">
+    <!-- Demo section: video + sample audit PDF -->
+    <section id="demo">
       <div class="section-inner">
-        <div class="section-label">Demos</div>
+        <div class="section-label">Live demo</div>
         <div class="section-title-row">
-          <h2 class="section-title">What the Engine looks like when it is live.</h2>
+          <h2 class="section-title">See the Engine in motion.</h2>
           <p class="section-subtitle">
-            This is a UX demo with example data, showing how a customer sees coherence scores, margin at
-            risk, drift hot spots, and the top incoherent flows in their system.
+            Watch a short walkthrough of the Δ.72 Coherence Engine dashboard and download a sample Coherence Audit
+            to see how insights are delivered to leadership and teams.
           </p>
         </div>
 
-        <div class="grid demo-grid">
-          <div class="demo-shell">
-            <div class="demo-shell-header">
-              <div class="demo-shell-dots">
-                <span class="demo-dot"></span>
-                <span class="demo-dot"></span>
-                <span class="demo-dot"></span>
-              </div>
-              <div class="demo-shell-title">Δ.72 Coherence Engine · Dashboard</div>
-              <div class="demo-shell-env">Live UX demo · Sample data</div>
-            </div>
-            <div class="demo-main-body">
-              <div class="demo-top-row">
-                <div class="demo-top-left">
-                  <div class="demo-system-name">System: Mid stage SaaS org · North America</div>
-                  <span class="demo-pill">Active coherence scan · vΔ.72.1</span>
-                </div>
-                <div class="demo-coherence-score">
-                  <div class="demo-coherence-label">Coherence score</div>
-                  <div class="demo-coherence-value">0.82</div>
-                  <div style="font-size:10px;color:#9af5b1;">Stable · improvable</div>
-                </div>
-              </div>
+        <div class="demo-wrapper">
+          <div class="demo-card">
+            <div class="demo-title">Δ.72 Coherence Engine UX walkthrough</div>
+            <p class="demo-text">
+              This overview shows how the Engine reads your system, identifies incoherent flows, estimates margin at
+              risk, and surfaces the smallest set of moves that restore alignment.
+            </p>
 
-              <div class="demo-kpis">
-                <div class="demo-kpi-card">
-                  <div class="demo-kpi-label">Margin at risk</div>
-                  <div class="demo-kpi-value">$2.4M / year</div>
-                  <div class="demo-kpi-sub">From 7 incoherent flows</div>
-                </div>
-                <div class="demo-kpi-card">
-                  <div class="demo-kpi-label">Drift hot zones</div>
-                  <div class="demo-kpi-value">3</div>
-                  <div class="demo-kpi-sub">Sales · Ops · Support</div>
-                </div>
-                <div class="demo-kpi-card">
-                  <div class="demo-kpi-label">High leverage moves</div>
-                  <div class="demo-kpi-value">5</div>
-                  <div class="demo-kpi-sub">Resolve 70% of loss</div>
-                </div>
-              </div>
-
-              <div class="demo-lower-grid">
-                <div class="demo-chart">
-                  <div class="demo-chart-title">Coherence & drift over time</div>
-                  <div class="demo-chart-bars">
-                    <div class="demo-chart-line"></div>
-                  </div>
-                  <div class="demo-chart-note">
-                    Strategy–structure–execution coherence over the last 12 months. Spikes in drift align
-                    with org changes and rushed product launches.
-                  </div>
-                </div>
-
-                <div class="demo-list">
-                  <div class="demo-list-title">Top incoherent flows · sorted by margin impact</div>
-                  <div class="demo-list-item">
-                    <span>1. Handoff gap · Sales → Onboarding</span>
-                    <span class="demo-list-tag">High impact</span>
-                  </div>
-                  <div class="demo-list-item">
-                    <span>2. Support load not feeding roadmap</span>
-                    <span class="demo-list-tag">Structural</span>
-                  </div>
-                  <div class="demo-list-item">
-                    <span>3. Incentives misaligned with retention</span>
-                    <span class="demo-list-tag">Incentive</span>
-                  </div>
-                  <div class="demo-list-item">
-                    <span>4. Shadow process around renewals</span>
-                    <span class="demo-list-tag">Hidden loop</span>
-                  </div>
-                </div>
-              </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/hZAiKuE1n_s"
+                title="Δ.72 Coherence Engine Demo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
 
-          <div class="demo-side">
-            <div class="demo-side-card">
-              <div class="demo-side-title">How customers use this view</div>
-              <p class="demo-side-text">
-                In a live deployment, this dashboard updates as your system changes. Founders and operators
-                use it to see where coherence is dropping, how much margin is at risk, and which interventions
-                will restore stability the fastest.
-              </p>
-            </div>
-            <div class="demo-side-card">
-              <div class="demo-side-title">Developer & Professional licenses</div>
-              <p class="demo-side-text">
-                Developer License holders can work with sample data and smaller internal systems. Professional
-                License holders run this kind of analysis for clients, including coherence audits, ongoing
-                monitoring, and strategic implementation work.
-              </p>
-           </div>
-<div class="demo-side-card">
-  <div class="demo-side-title">Sample Coherence Audit (PDF)</div>
-  <p class="demo-side-text">
-    Download a sample Coherence Audit report to see how findings, margin at risk, and recommended
-    moves are presented to leadership and teams.
-  </p>
-  <a
-    href="Coherence_Engine_Aduit_Sample.pdf"
-    class="license-cta"
-    target="_blank"
-    rel="noopener"
-  >
-    Download sample audit (PDF)
-  </a>
-</div>
-</div>
-</div>
-</div>
-</section>
+          <div class="demo-side-card">
+            <div class="demo-side-title">Sample Coherence Audit (PDF)</div>
+            <p class="demo-side-text">
+              Download a sample Coherence Audit report to see how findings, margin at risk, and recommended moves are
+              structured for real decision making.
+            </p>
+            <a
+              href="Coherence_Engine_Aduit_Sample.pdf"
+              class="license-cta"
+              target="_blank"
+              rel="noopener"
+            >
+              Download sample audit (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- How it works -->
     <section id="how">
@@ -1079,7 +808,7 @@
       <div class="section-inner">
         <div class="section-label">Licensing</div>
         <div class="section-title-row">
-          <h2 class="section-title">Developer, professional, and enterprise licensing.</h2>
+          <h2 class="section-title">Professional and enterprise licensing, by design.</h2>
           <p class="section-subtitle">
             The Δ.72 Coherence Engine is licensed as proprietary intellectual property. All licenses are
             non transferable and issued directly.
@@ -1089,69 +818,43 @@
         <div class="grid grid-3">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Developer License</div>
-              <div class="pill">Individual use</div>
+              <div class="card-title">Professional license</div>
+              <div class="pill">Individual operators</div>
             </div>
             <div class="card-body">
-              <div class="pricing-row">
-                $1,111 / year · or $3,333 lifetime
-              </div>
+              <div class="pricing-row">For solo founders, strategists, and operators.</div>
               <p class="pricing-note">
-                For builders, researchers, and solo founders who want foundational access to the Engine for
-                internal work, experimentation, and non commercial optimization across their own systems.
+                Includes the core Engine, Coherence Audit framework, and implementation guide for use
+                inside your own practice or company.
               </p>
-              <a
-                class="license-cta"
-                href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Developer%20License&body=Hi%20AshaRei,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20Developer%20License%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ASystem%20size%20(approx):%0D%0APreferred%20option:%20$1,111%20annual%20/%20$3,333%20lifetime.%0D%0A%0D%0AThank%20you."
-              >
-                Request Developer License
-              </a>
             </div>
           </div>
 
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Professional License</div>
-              <div class="pill">Consultants & small teams</div>
+              <div class="card-title">Enterprise license</div>
+              <div class="pill">Teams and organizations</div>
             </div>
             <div class="card-body">
-              <div class="pricing-row">
-                $11,111 / year · or $22,222 lifetime
-              </div>
+              <div class="pricing-row">For companies and systems with significant complexity.</div>
               <p class="pricing-note">
-                For consultants, coaches, and boutique firms who run paid coherence audits and optimization
-                projects with clients using the Δ.72 Coherence Engine as part of their practice.
+                Enables internal deployment of the Engine across teams and business units, with
+                enterprise level terms and optional guided audits.
               </p>
-              <a
-                class="license-cta"
-                href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Professional%20License&body=Hi%20AshaRei,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20Professional%20License%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ASystem%20size%20(approx):%0D%0AIntended%20use%20(case%20work,%20client%20audits,%20etc.):%0D%0A%0D%0AThank%20you."
-              >
-                Request Professional License
-              </a>
             </div>
           </div>
 
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Enterprise & Sovereign</div>
-              <div class="pill">Large orgs & infrastructure</div>
+              <div class="card-title">Partner and bespoke</div>
+              <div class="pill">Custom arrangements</div>
             </div>
             <div class="card-body">
-              <div class="pricing-row">
-                Tiered annual licensing based on org size and integration depth:
-              </div>
+              <div class="pricing-row">For strategic partners, funds, or multi asset portfolios.</div>
               <p class="pricing-note">
-                $72,000 / year (small orgs, less than 50 employees), $144,000 / year (50–250),
-                $288,000 / year (250–1,000), $500,000+ / year for large enterprise, hospitals,
-                AI companies, and government scale systems. Government and sovereign infrastructure
-                agreements begin at $2.2M+ per year and are negotiated directly.
+                Tailored licensing, joint deployment, and sovereign frameworks can be discussed directly.
+                Every arrangement is designed for long term coherence, not short term extraction.
               </p>
-              <a
-                class="license-cta"
-                href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Enterprise%20License&body=Hi%20AshaRei,%0D%0A%0D%0AWe'd%20like%20to%20discuss%20an%20Enterprise%20or%20Sovereign%20license%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0AOrganization:%0D%0AOrg%20size:%0D%0ASector:%0D%0APrimary%20systems%20in%20scope:%0D%0A%0D%0AThank%20you."
-              >
-                Request Enterprise / Sovereign terms
-              </a>
             </div>
           </div>
         </div>
@@ -1182,7 +885,7 @@
             </p>
             <p style="margin-top:6px;">
               Please include: your name, company or project, approximate size of the system, and whether
-              you are interested in a Developer, Professional, or Enterprise level engagement.
+              you are interested in a Professional, Enterprise, or Partner level engagement.
             </p>
           </div>
         </div>
@@ -1199,4 +902,5 @@
 </div>
 </body>
 </html>
+
 
