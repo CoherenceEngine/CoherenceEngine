@@ -461,6 +461,100 @@
       color: var(--gold-soft);
     }
 
+    /* Demo section */
+
+    .demo-grid {
+      align-items: stretch;
+    }
+
+    .demo-main {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .demo-thumb {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      box-shadow: var(--shadow-soft);
+      display: block;
+    }
+
+    .demo-label {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding: 6px 10px;
+      background: rgba(5, 6, 8, 0.82);
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.6);
+    }
+
+    .badge-live {
+      font-size: 10px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(120, 200, 120, 0.9);
+      color: #9af5b1;
+      margin-left: 8px;
+    }
+
+    .demo-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .demo-card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      padding: 14px 14px 12px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+    }
+
+    .demo-title {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .demo-text {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .demo-video {
+      margin-top: 18px;
+    }
+
+    .demo-video-frame {
+      position: relative;
+      padding-top: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6);
+      background: radial-gradient(circle at top, #1a2130, #050608);
+    }
+
+    .demo-video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .demo-video-caption {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
     footer {
       border-top: 1px solid rgba(212, 175, 55, 0.18);
       background: #050608;
@@ -515,6 +609,7 @@
         </div>
       </div>
       <nav class="nav-links">
+        <a href="#demos">Demos</a>
         <a href="#how">How it works</a>
         <a href="#use-cases">Use cases</a>
         <a href="#licensing">Licensing</a>
@@ -539,19 +634,19 @@
             Early audits show companies recovering <strong>8–28 percent annual margin</strong> by resolving incoherence surfaced by the Engine.
           </div>
           <div class="hero-pricing">
-            Developer License: <strong>$1,111 / year</strong> or <strong>$3,333 lifetime</strong> (limited early-access tier).
+            Developer License: <strong>$1,111 / year</strong> or <strong>$3,333 lifetime</strong> (limited early access tier).
           </div>
           <div class="hero-actions">
-  <a
-    class="btn-primary"
-    href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Developer%20License&body=Hi%20AshaRei,%0D%0A%0D%0AI'd%20like%20to%20purchase%20a%20Developer%20License%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ASystem%20size%20(approx):%0D%0APreferred%20option:%20$1,111%20annual%20/%20$3,333%20lifetime.%0D%0A%0D%0AThank%20you."
-  >
-    Request Developer License
-  </a>
-  <a class="btn-ghost" href="#licensing">
-    View all licensing options
-  </a>
-</div>
+            <a
+              class="btn-primary"
+              href="mailto:coherencedashboard@gmail.com?subject=Δ.72%20Coherence%20Engine%20Developer%20License&body=Hi%20AshaRei,%0D%0A%0D%0AI'd%20like%20to%20request%20a%20Developer%20License%20for%20the%20Δ.72%20Coherence%20Engine.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ASystem%20size%20(approx):%0D%0APreferred%20option:%20$1,111%20annual%20/%20$3,333%20lifetime.%0D%0A%0D%0AThank%20you."
+            >
+              Request Developer License
+            </a>
+            <a class="btn-ghost" href="#demos">
+              Watch demos
+            </a>
+          </div>
           <p class="hero-note">
             Built as a sovereign, field driven framework for <span>founders, operators, and enterprises</span>
             who know their current dashboards are not telling the whole story.
@@ -582,6 +677,69 @@
               <li><span>Outputs.</span> A clear map of where to intervene for maximum recovered margin.</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demos -->
+    <section id="demos">
+      <div class="section-inner">
+        <div class="section-label">Demos</div>
+        <div class="section-title-row">
+          <h2 class="section-title">See what coherence looks like in practice.</h2>
+          <p class="section-subtitle">
+            These example dashboards and reports are populated with sample data. In real deployments, the
+            Engine reads your live system and produces similar coherence views.
+          </p>
+        </div>
+
+        <div class="grid grid-2 demo-grid">
+          <div class="demo-main">
+            <span class="demo-label">
+              Coherence dashboard
+              <span class="badge-live">Example data</span>
+            </span>
+            <img
+              src="coherence-dashboard-demo.png"
+              alt="Δ.72 Coherence Engine dashboard example"
+              class="demo-thumb"
+            />
+          </div>
+
+          <div class="demo-stack">
+            <div class="demo-card">
+              <div class="demo-title">Before and after margin snapshot</div>
+              <p class="demo-text">
+                A simple view that compares margin before and after resolving the top incoherent flows
+                surfaced by the Engine. Many early audits recover 8–28 percent annual margin without adding
+                new headcount or tooling.
+              </p>
+            </div>
+
+            <div class="demo-card">
+              <div class="demo-title">Drift and coherence timeline</div>
+              <p class="demo-text">
+                A time based view that shows when strategy, structure, and execution drifted out of sync,
+                and where coherence interventions stabilized the system again.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-video">
+          <div class="demo-video-frame">
+            <!-- Replace VIDEO_ID_HERE with your YouTube or Loom embed ID when ready -->
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              title="Δ.72 Coherence Engine overview demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="demo-video-caption">
+            Short overview demo of how the Δ.72 Coherence Engine reads a system, surfaces incoherence, and
+            maps the fastest path to recovered margin.
+          </p>
         </div>
       </div>
     </section>
@@ -704,7 +862,7 @@
               </div>
               <p class="pricing-note">
                 For builders, researchers, and solo founders who want foundational access to the Engine for
-                internal work, experimentation, and non-commercial optimization across their own systems.
+                internal work, experimentation, and non commercial optimization across their own systems.
               </p>
             </div>
           </div>
@@ -735,10 +893,10 @@
                 Tiered annual licensing based on org size and integration depth:
               </div>
               <p class="pricing-note">
-                $72,000 / year (small orgs, &lt; 50 employees) · $144,000 / year (50–250) ·
-                $288,000 / year (250–1,000) · $500,000+ / year for large enterprise, hospitals,
-                AI companies, and government-scale systems. Government / sovereign infrastructure
-                agreements begin at $2.2M+ / year.
+                $72,000 / year (small orgs, less than 50 employees), $144,000 / year (50–250),
+                $288,000 / year (250–1,000), $500,000+ / year for large enterprise, hospitals,
+                AI companies, and government scale systems. Government and sovereign infrastructure
+                agreements begin at $2.2M+ per year.
               </p>
             </div>
           </div>
