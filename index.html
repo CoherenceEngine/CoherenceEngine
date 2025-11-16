@@ -553,6 +553,118 @@
       height: 100%;
     }
 
+    /* ========= PRICING PLAN CARDS ========= */
+    .pricing-plan-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .pricing-plan-card {
+      background: radial-gradient(circle at top, #151925, #050608);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .pricing-plan-name {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .pricing-plan-tag {
+      font-size: 11px;
+      color: var(--gold-soft);
+      margin-bottom: 10px;
+    }
+
+    .pricing-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .pricing-amount {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .pricing-currency {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .pricing-per {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .pricing-plan-card ul {
+      padding-left: 16px;
+      margin: 8px 0 10px;
+    }
+
+    .pricing-plan-card li + li {
+      margin-top: 4px;
+    }
+
+    .pricing-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pricing-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: none;
+      font-size: 12px;
+      font-weight: 500;
+      background: linear-gradient(135deg, var(--gold), #f5d46a);
+      color: #1a1200;
+      box-shadow: var(--shadow-soft);
+      cursor: pointer;
+    }
+
+    .pricing-btn-primary:hover {
+      filter: brightness(1.04);
+    }
+
+    .pricing-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      font-size: 11px;
+      color: var(--gold-soft);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .pricing-btn-secondary:hover {
+      border-color: #f5d46a;
+      color: #f5d46a;
+    }
+
+    .pricing-small-note {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
     @media (max-width: 900px) {
       .hero-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -575,6 +687,10 @@
       }
 
       .demo-wrapper {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .pricing-plan-wrapper {
         grid-template-columns: minmax(0, 1fr);
       }
     }
@@ -863,6 +979,73 @@
           All sales of the Δ.72 Coherence Engine are final. Due to the nature of digital software and
           intellectual property, there are no refunds or chargebacks once access has been granted.
         </p>
+
+        <!-- New detailed pricing plans with buy buttons -->
+        <div class="pricing-plan-wrapper">
+          <!-- Developer License -->
+          <div class="pricing-plan-card">
+            <div class="pricing-plan-name">Developer License</div>
+            <div class="pricing-plan-tag">For builders, architects, and integrators</div>
+            <div class="pricing-price-row">
+              <span class="pricing-amount">$4,800</span>
+              <span class="pricing-currency">USD</span>
+              <span class="pricing-per">· one-time</span>
+            </div>
+            <ul>
+              <li>Single developer or architect seat.</li>
+              <li>Core Δ.72 Coherence Engine library and methods.</li>
+              <li>Use inside your own tools, dashboards, or client work.</li>
+              <li>Includes Sample Coherence Audit template and UX patterns.</li>
+              <li>Non-transferable, bound to you or your operating entity.</li>
+            </ul>
+            <div class="pricing-cta-row">
+              <a href="#contact" class="pricing-btn-primary">
+                Buy Developer License
+              </a>
+              <a
+                href="mailto:coherencedashboard@gmail.com?subject=Developer%20License%20-%20Δ.72%20Coherence%20Engine&body=Name%3A%0ACompany%3A%0ASystem%20size%3A%0AIntended%20use%3A%0A%0APlease%20send%20me%20a%20Developer%20License%20checkout%20link."
+                class="pricing-btn-secondary"
+              >
+                Email to purchase
+              </a>
+            </div>
+            <div class="pricing-small-note">
+              Stripe checkout and instant license delivery will be wired directly to this button. Until then, purchase is completed via secure invoice.
+            </div>
+          </div>
+
+          <!-- Professional License -->
+          <div class="pricing-plan-card">
+            <div class="pricing-plan-name">Professional License</div>
+            <div class="pricing-plan-tag">For operators and small teams</div>
+            <div class="pricing-price-row">
+              <span class="pricing-amount">$9,800</span>
+              <span class="pricing-currency">USD</span>
+              <span class="pricing-per">· one-time</span>
+            </div>
+            <ul>
+              <li>For one organization or practice (up to a set size).</li>
+              <li>Full Δ.72 Coherence Engine framework and Coherence Audit system.</li>
+              <li>Use across multiple clients, departments, or products under one entity.</li>
+              <li>Includes developer-level access plus operator-level audit workflows.</li>
+              <li>Priority consideration for early Enterprise or Partner upgrades.</li>
+            </ul>
+            <div class="pricing-cta-row">
+              <a href="#contact" class="pricing-btn-primary">
+                Buy Professional License
+              </a>
+              <a
+                href="mailto:coherencedashboard@gmail.com?subject=Professional%20License%20-%20Δ.72%20Coherence%20Engine&body=Name%3A%0ACompany%3A%0ASystem%20size%3A%0AIntended%20use%3A%0A%0APlease%20send%20me%20a%20Professional%20License%20checkout%20link."
+                class="pricing-btn-secondary"
+              >
+                Email to purchase
+              </a>
+            </div>
+            <div class="pricing-small-note">
+              Ideal if you want to use the Engine as part of your core operating system or advisory work, with clear room to expand into Enterprise terms later.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -885,7 +1068,7 @@
             </p>
             <p style="margin-top:6px;">
               Please include: your name, company or project, approximate size of the system, and whether
-              you are interested in a Professional, Enterprise, or Partner level engagement.
+              you are interested in a Developer, Professional, Enterprise, or Partner level engagement.
             </p>
           </div>
         </div>
@@ -902,5 +1085,6 @@
 </div>
 </body>
 </html>
+
 
 
