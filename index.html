@@ -147,7 +147,15 @@
     .hero {
       padding: 48px 20px 32px;
     }
-
+    .hero-logo-img {
+      width: 260px;
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 0 20px 0;
+      filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.35));
+    }
+    
     .hero-grid {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -507,10 +515,11 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow">Patent pending coherence engine</div>
-          <h1>Reveal hidden incoherence, recover margin, align the system.</h1>
+  <div class="hero-grid">
+    <div>
+      <img src="coherence-logo.png" alt="Δ.72 Coherence Engine Logo" class="hero-logo-img">
+      <div class="eyebrow">Patent pending coherence engine</div>
+      <h1>Reveal hidden incoherence, recover margin, align the system.</h1>
           <p class="subhead">
             The Δ.72 Coherence Engine™ is a diagnostic and optimization system that shows you where your
             business is losing energy, money, and momentum, and how to reclaim it.
