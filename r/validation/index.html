@@ -60,6 +60,16 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 
 
 <section class="section">
+<div class="label">Evidence tracks — not one combined experiment</div>
+<div class="tablewrap"><table>
+<thead><tr><th>Track</th><th>Measured</th><th>Current result</th><th>Boundary</th></tr></thead><tbody>
+<tr><td><strong>GPU synthetic suite</strong></td><td>Six synthetic experiments on 2× NVIDIA A40 GPUs</td><td><span class="badge positive">Public reported</span> 15.4 s GPU-suite runtime; Exp 6: 1,000 trials, 100% detection, 406-step mean lead</td><td>No matched CPU runtime is reported; not a CPU-vs-GPU speedup claim</td></tr>
+<tr><td><strong>Scania primary</strong></td><td>Conditional compute on locked 16,000-row test set</td><td><span class="badge pass">Saved-model reproduction PASS</span> 13,708 heavy calls avoided; missed failures 6→6</td><td>Not GPU acceleration or physical-energy measurement</td></tr>
+<tr><td><strong>NASA Owner Core</strong></td><td>FD001 early warning</td><td><span class="badge mixed">MIXED</span> 100% detection; 125-cycle median lead; alert burden failed</td><td>Separate from older NASA protocols</td></tr>
+<tr><td><strong>Physical energy</strong></td><td>Plug-level kWh</td><td><span class="badge positive">Preliminary</span> 0.02 vs 0.01 kWh</td><td>Requires independent replication; not universal savings</td></tr>
+</tbody></table></div>
+</section>
+<section class="section">
 <div class="label">Reference executable benchmark</div>
 <div class="grid">
 <div class="card"><div class="kpi">100<small>FD001 run-to-failure engines</small></div><p>The private validation package now includes a frozen NASA C-MAPSS FD001 reference implementation using deterministic engine-level 5-fold holdout.</p></div>
