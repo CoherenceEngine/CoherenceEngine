@@ -58,7 +58,16 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 </div>
 </section>
 
-<section class="section" id="benchmarks">
+
+<section class="section">
+<div class="label">Reference executable benchmark</div>
+<div class="grid">
+<div class="card"><div class="kpi">100<small>FD001 run-to-failure engines</small></div><p>The private validation package now includes a frozen NASA C-MAPSS FD001 reference implementation using deterministic engine-level 5-fold holdout.</p></div>
+<div class="card"><div class="kpi">3<small>Prospective PASS gates</small></div><p>Detection ≥95%, median valid lead ≥30 cycles, and premature alert episodes ≤1 per engine. These are repository criteria, not NASA standards.</p></div>
+<div class="card"><div class="kpi">Black-box<small>Protected CE interface</small></div><p>Authorized validators can run the engine without receiving proprietary operators, thresholds, equations, or source code.</p></div>
+</div>
+</section>
+\n<section class="section" id="benchmarks">
 <div class="label">Validation suite</div>
 <div class="tablewrap"><table>
 <thead><tr><th>Benchmark</th><th>Question</th><th>Evidence role</th><th>Status entering third-party validation</th></tr></thead>
