@@ -70,6 +70,15 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 </tbody></table></div>
 </section>
 <section class="section">
+<div class="label">NASA external held-out reproduction</div>
+<div class="grid">
+<div class="card"><div class="kpi">PASS_EXACT<small>FD002–FD004 rerun</small></div><p>The original prospectively locked official-test experiments were rerun from the archived reproducibility repository, and every canonical CSV output matched the frozen references exactly.</p></div>
+<div class="card"><div class="kpi">8 / 9<small>RUL horizons above tested EWMA</small></div><p>Across FD002–FD004, CE F1 exceeded the tested EWMA implementation at eight of nine evaluated horizons.</p></div>
+<div class="card"><div class="kpi">+0.124<small>FD004 RUL≤50 ΔF1</small></div><p>Paired-engine bootstrap 95% interval: +0.069 to +0.182. At RUL≤30, ΔF1 was +0.084 with interval +0.026 to +0.148.</p></div>
+</div>
+<div class="notice"><h2>Interpretation boundary</h2><p>PASS_EXACT means exact numerical reproduction of the frozen external-test outputs. It does not mean universal superiority. Supervised logistic regression remained stronger than CE on 8 of 9 tested horizons. FD001 is preserved as method-development/history under separate protocols.</p></div>
+</section>
+<section class="section">
 <div class="label">Reference executable benchmark</div>
 <div class="grid">
 <div class="card"><div class="kpi">100<small>FD001 run-to-failure engines</small></div><p>The private validation package now includes a frozen NASA C-MAPSS FD001 reference implementation using deterministic engine-level 5-fold holdout.</p></div>
@@ -82,7 +91,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 <div class="tablewrap"><table>
 <thead><tr><th>Benchmark</th><th>Question</th><th>Evidence role</th><th>Status entering third-party validation</th></tr></thead>
 <tbody>
-<tr><td><strong>NASA C-MAPSS</strong></td><td>Can degradation be detected with useful warning lead?</td><td>Flagship early-warning benchmark</td><td><span class="badge pending">Revalidate</span> prior positive results, frozen private-CE comparison still requires execution</td></tr>
+<tr><td><strong>NASA C-MAPSS</strong></td><td>Can degradation be detected on held-out official test sets under frozen protocols?</td><td>Flagship early-warning benchmark</td><td><span class="badge pass">PASS_EXACT reproduction</span> FD002–FD004 external outputs regenerated exactly from archived code/data/environment; FD001 retained as development history</td></tr>
 <tr><td><strong>Scania APS</strong></td><td>Can heavy evaluation be reduced without increasing critical misses, and does the behavior extend across model families?</td><td>Industrial efficiency / conditional compute</td><td><span class="badge pass">Saved-model reproduction PASS</span> primary 16,000-row V2 locked-test result reproduced from frozen bundle; full retraining and external third-party receipt pending. Separate 9-model aggregate: 8/9 pass, model-by-model reproduction incomplete.</td></tr>
 <tr><td><strong>HBI locked holdout</strong></td><td>Can control survival be preserved while reducing modeled activity?</td><td>Control efficiency</td><td><span class="badge pass">Prior pass candidate</span> 72-case locked reference, requires replication</td></tr>
 <tr><td><strong>DAPC OOD</strong></td><td>Does behavior persist under unseen disturbances?</td><td>Robustness / falsification</td><td><span class="badge pending">Independent run needed</span></td></tr>
