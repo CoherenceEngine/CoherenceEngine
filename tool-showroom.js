@@ -36,4 +36,5 @@ else if(m==='network'){let lines='';const points=Array.from({length:10},(_,i)=>[
 $('tool-plot').innerHTML='<rect width="720" height="280" fill="#0b1822"/><text x="32" y="22" fill="#a8bbcc" font-size="13">'+(m==='network'?'Conceptual network':'Synthetic normalized signal, 60 steps')+'</text>'+(m==='network'?'':'<path d="'+path(values)+'" fill="none" stroke="#a7e9d9" stroke-width="3"/>')+extra;$('tool-output').textContent=output;$('tool-explanation').textContent=explain;
 }
 $('tool-search').oninput=render;$('tool-group').onchange=render;$('tool-a').oninput=draw;$('tool-b').oninput=draw;render();
+window.addEventListener('showroom-find',event=>{$('tool-group').value='All tools';$('tool-search').value=String(event.detail||'');render();$('tool-search').focus();});
 })();
