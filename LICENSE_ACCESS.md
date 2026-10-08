@@ -13,16 +13,21 @@ Protected materials include, without limitation:
 - Private datasets, traces, adapters, and scoring pipelines
 - Commercial deployment containers, APIs, modules, or pilot packages
 - Field-specific implementation guides
+- RecoverMargins and enterprise workflow twins
+- Medical, biometric, public-health, and physiological signal twins
+- Infrastructure, energy, semiconductor, transportation, and data-center twins
+- Regenerative, biohybrid, quantum, robotics, habitat, and frontier-system twins
 
-Public materials may summarize evidence, describe architecture, and show conceptual demonstrations and executable synthetic illustrations. Public preview JavaScript uses standard illustrative calculations, not the protected tool implementations. Preview results are not benchmark results or validation of the original tools. These materials are intentionally separated from protected implementation details.
+Public materials may summarize evidence, describe architecture, and show non-executable demonstrations. They are intentionally separated from protected implementation details.
+
+The public inventory is selected, not exhaustive. Medical, biometric, regulated, frontier-physics, and high-value infrastructure materials may require reviewer-gated, sponsor-gated, or private access even when public concept descriptions exist.
 
 To request licensed access, identify:
 
-- Requested tool, digital twin, or domain
+- Requested digital twin or domain
 - Organization and intended use
 - Dataset or deployment environment
 - Evaluation, pilot, commercial, research, or regulatory context
 - Whether publication or public performance claims are intended
 
 All rights are reserved unless a separate written license says otherwise.
-
