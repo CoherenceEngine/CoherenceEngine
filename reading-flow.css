@@ -1,1 +1,14 @@
 .value-benefits{list-style:none;padding:0;margin:20px 0;display:grid;gap:10px}.value-benefits li{border-left:2px solid #63f5d4;padding-left:14px}.value-benefits strong{display:block;color:#eafff8;font-size:15px}.value-benefits span{color:#b8cadc;font-size:13px}.obs-intro{align-items:center}.obs-intro h1{max-width:720px}.obs-description p{max-width:570px}#home{padding-bottom:55px}.result-number{font-size:clamp(23px,2.4vw,34px);line-height:1.2;color:#d5f3a8!important;font-weight:550;letter-spacing:-.025em}.evidencegrid{align-items:stretch}.evidencegrid article{display:flex;flex-direction:column}.evidencegrid .badge{align-self:flex-start}.evidencegrid .textlink{margin-top:auto}.guided-panel{max-width:1000px;margin:auto;padding:28px;border:1px solid #477f87;border-radius:14px;background:linear-gradient(135deg,#142d3d,#0b1626)}.guided-panel svg{width:100%;height:auto;display:block;margin:20px 0}.guided-panel>p{max-width:850px}.guided-panel input{width:100%;accent-color:#63f5d4}.guided-panel .muted{font-size:13px}#guided-demo{--section-accent:#63f5d4}#observatory>.obs-view{margin-bottom:20px}#tool-browse{margin-bottom:24px;border-color:#ffd17c;color:#ffe4a7}#platform-tools[hidden],#platform-showroom[hidden],.tool-cards article[hidden]{display:none!important}#platform-tools{margin-top:48px}#tools,#platform-tools{scroll-margin-top:130px}.tool-cards{margin-bottom:30px}.licensegrid{margin-bottom:45px}.sectionhead{align-items:start}nav div{align-items:center;gap:20px}nav div .primary{color:#062820;padding:10px 15px}.obs-description{min-width:0}#research-identity{--section-accent:#be9aff}.dna-panel{margin-bottom:0}#research-identity .dna-heading{display:none}@media(max-width:850px){.obs-description{display:block}.obs-intro{align-items:start}.obs-intro h1{max-width:none}.obs-workspace{max-width:100%}}@media(max-width:620px){.guided-panel{padding:18px}.value-benefits{gap:12px}.obs-intro h1{font-size:40px}nav div{gap:10px 15px}nav div .primary{padding:8px 12px}.result-number{font-size:28px}.evidencegrid article{padding:22px 14px}.guided-panel .tool-output{font-size:18px}}
+
+/* Desktop readability pass */
+@media(min-width:900px){
+  body{font-size:18px;line-height:1.7}
+  nav div{font-size:15px}
+  p,li,td{font-size:16px}
+  article p,.evidencegrid p,.researchgrid p,.projectcard p,.license-categories p,.pilot-grid p{font-size:16px;line-height:1.65}
+  .sectionhead>p:last-child,.obs-description p{font-size:18px;line-height:1.65}
+  .value-benefits strong{font-size:16px}
+  .value-benefits span{font-size:15px}
+  .muted,.tool-scope,.license-note{font-size:15px}
+  .textlink{font-size:15px}
+}
