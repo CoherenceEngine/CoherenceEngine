@@ -14,17 +14,16 @@ Coherence Engine™ is an implemented, benchmark-tested computational system for
 - [Browse the research portfolio](https://coherenceengine.github.io/CoherenceEngine/#projects)
 
 ### Digital twin licensing
-The public repository is a showroom for selected evidence, domain maps, non-executable digital twin concepts, and investor-safe commercial framing. Runnable digital twins, protected scoring logic, thresholds, calibration rules, private benchmark reproduction packages, APIs, compiled modules, and deployment materials require written license approval.
+The public repository is a showroom for selected evidence, domain maps, non-executable digital twin concepts, and investor-safe commercial framing. It is not the full protected portfolio. Runnable digital twins, protected scoring logic, thresholds, calibration rules, private benchmark reproduction packages, APIs, compiled modules, and deployment materials require written license approval.
 
-| Digital twin | Public view | Licensed access |
+| Portfolio bucket | Public examples | Licensed access |
 | --- | --- | --- |
-| Cross-domain coherence atlas | Domain map and evidence summary | Field-specific evaluation package |
-| NASA C-MAPSS predictive maintenance | Public benchmark summary | Reproduction package and protected scoring workflow |
-| Compressor / industrial systems | Concept and evaluation pathway | Runnable industrial twin under defined use field |
-| Data-center runtime governance | Commercial scenario | Controlled pilot package, API, or compiled module |
-| Public health surveillance | Research-stage concept | Retrospective or silent-study package |
-| Food Coherence System | Consumer measurement concept | Device-data pipeline and validation package |
-| Mycelium / biohybrid substrate | Vision and architecture concept | Research collaboration package |
+| Industrial + Infrastructure Twins | Predictive maintenance, NASA C-MAPSS, compressor, data-center runtime governance, grid, pipeline, rail, airspace, semiconductor fab, hydroelectric, battery storage, freight | Field-specific evaluation packages, runnable twins, protected scoring workflow |
+| Human + Biological Signal Twins | Public health surveillance, ECG/arrhythmia, seizure early warning, Coherence Sound™, vagus/ear-clip response, food response, FCS | Retrospective research packages, silent-study packages, device-data pipelines, claim-controlled access |
+| Enterprise + Decision Twins | RecoverMargins, margin recovery, business drift, legal/operations drift, AI governance, learning progression, decision durability | Licensed demos, workflow twins, deployment packages, commercial pilots |
+| Regenerative + Frontier Twins | Mycelium, biohybrid substrates, regenerative buildings, closed-loop habitats, quantum calibration drift, robotics safety, physical-engine concepts | Private research collaboration or sponsor-gated package |
+
+Selected public twins include the cross-domain coherence atlas, NASA / predictive maintenance, industrial compressor / infrastructure, data-center runtime governance, RecoverMargins / enterprise drift, public health / biomedical signals, FCS / biohybrid concepts, and frontier systems. Medical, biometric, frontier-physics, regulated, and high-value infrastructure twins should remain private or reviewer-gated until the proper validation and license terms are in place.
 
 See [LICENSE_ACCESS.md](LICENSE_ACCESS.md) for the access boundary.
 
