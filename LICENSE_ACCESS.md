@@ -14,11 +14,11 @@ Protected materials include, without limitation:
 - Commercial deployment containers, APIs, modules, or pilot packages
 - Field-specific implementation guides
 
-Public materials may summarize evidence, describe architecture, and show non-executable demonstrations. They are intentionally separated from protected implementation details.
+Public materials may summarize evidence, describe architecture, and show conceptual demonstrations and executable synthetic illustrations. Public preview JavaScript uses standard illustrative calculations, not the protected tool implementations. Preview results are not benchmark results or validation of the original tools. These materials are intentionally separated from protected implementation details.
 
 To request licensed access, identify:
 
-- Requested digital twin or domain
+- Requested tool, digital twin, or domain
 - Organization and intended use
 - Dataset or deployment environment
 - Evaluation, pilot, commercial, research, or regulatory context
