@@ -12,3 +12,18 @@
   .muted,.tool-scope,.license-note{font-size:15px}
   .textlink{font-size:15px}
 }
+
+/* Strong desktop readability override */
+@media(min-width:900px){
+  body{font-size:20px!important;line-height:1.72!important}
+  nav div{font-size:16px!important}
+  p,li,td,th,label,summary{font-size:18px!important;line-height:1.68!important}
+  article p,.evidencegrid p,.researchgrid p,.projectcard p,.licensegrid p,.license-categories p,.pilot-grid p,.obs-inspector>p:not(.eyebrow){font-size:18px!important;line-height:1.68!important}
+  .sectionhead>p:last-child,.obs-description p,.guided-panel>p{font-size:20px!important;line-height:1.65!important}
+  .value-benefits strong{font-size:18px!important}
+  .value-benefits span{font-size:17px!important}
+  .muted,.tool-scope,.license-note,.bubble-note,.bubble-instruction{font-size:16px!important}
+  .eyebrow{font-size:13px!important}
+  .textlink,.primary,.secondary,button{font-size:16px!important}
+  .tool-cards h3,.licensegrid h3,.license-categories h3{font-size:24px!important}
+}
