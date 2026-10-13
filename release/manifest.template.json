@@ -1,0 +1,16 @@
+{
+  "documentation_version": "commercial-package-0.1.0",
+  "release_status": "pending",
+  "engine_version": null,
+  "engine_sha256": null,
+  "adapter_version": null,
+  "baseline_version": null,
+  "dataset_manifest_sha256": null,
+  "supported_environment": null,
+  "license_reference": null,
+  "run_command": null,
+  "expected_output_sha256": null,
+  "operational_report": null,
+  "reviewer_receipt": null,
+  "release_owner": null
+}

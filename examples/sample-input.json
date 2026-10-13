@@ -1,0 +1,19 @@
+{
+  "run_id": "synthetic-example-001",
+  "records": [
+    {
+      "record_id": "sample-001",
+      "features": {
+        "sensor_a": 1.2,
+        "sensor_b": 0.8
+      }
+    },
+    {
+      "record_id": "sample-002",
+      "features": {
+        "sensor_a": 1.4,
+        "sensor_b": 0.9
+      }
+    }
+  ]
+}
