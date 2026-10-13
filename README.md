@@ -6,6 +6,14 @@
 
 Coherence Engine™ is an implemented, benchmark-tested computational system for examining changing relationships, drift, instability, and recovery in dynamic systems. The public site connects technical evidence to potential decisions and applications, while distinguishing implemented results from research hypotheses.
 
+### Featured industrial evaluation evidence
+
+A retrospective UCI hydraulic pump-leak study found greater condition-discrimination AUROC with an **EWMA + Coherence Engine™ diagnostic fusion (0.757)** than with **EWMA alone (0.640)**. At the later calibrated alarm threshold, the fusion flagged **16/45 pump-leak-positive blocks** versus **8/45** for EWMA, with **0/43 pump-leak-negative blocks** alerted by either method.
+
+This is a **single-rig, previously inspected retrospective benchmark**, not independent validation. The fusion still missed 29/45 pump-positive blocks, and the tested regime-aware adapter performed worse than the global adapter. No energy, maintenance-cost, or prospective early-warning benefit was measured.
+
+[**Inspect the hydraulic benchmark and evidence boundaries →**](https://github.com/CoherenceEngine/Research/blob/main/validation/hydraulic_pump_fusion_v1/README.md) · [**Discuss an industrial diagnostic evaluation →**](mailto:CoherenceDashboard@gmail.com?subject=Independent%20Industrial%20Diagnostic%20Evaluation)
+
 ### Start with the value
 - [Explore applications and the interactive domain map](https://coherenceengine.github.io/CoherenceEngine/#domain-map)
 - [Examine benchmark evidence and the interactive viewer](https://coherenceengine.github.io/CoherenceEngine/#evidence)
