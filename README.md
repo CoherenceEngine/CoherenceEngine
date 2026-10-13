@@ -13,6 +13,16 @@ Coherence Engine™ is an implemented, benchmark-tested computational system for
 - [Discuss a measurable pilot](https://coherenceengine.github.io/CoherenceEngine/#pilot)
 - [Browse the research portfolio](https://coherenceengine.github.io/CoherenceEngine/#projects)
 
+### Evaluate a commercial use case
+Start with a controlled heavy-model gating evaluation: an agreed dataset and baseline, frozen success criteria, a decision ledger, and a measured value report. Delivery depends on the executable-package and data-handling gates in the readiness register.
+
+- [Initial product and evidence](commercial/PRODUCT.md)
+- [Paid evaluation scope](commercial/PILOT.md)
+- [Integration contract and runnable offline example](docs/INTEGRATION.md)
+- [Commercial readiness, completed specifications and pending evidence](COMMERCIAL_READINESS.md)
+
+The offline example generates synthetic interface outputs only. Licensed engine execution, customer integration, independent evaluation, and production acceptance remain separate gates.
+
 ### Digital twin licensing
 The public repository is a showroom for selected evidence, domain maps, non-executable digital twin concepts, and investor-safe commercial framing. It is not the full protected portfolio. Runnable digital twins, protected scoring logic, thresholds, calibration rules, private benchmark reproduction packages, APIs, compiled modules, and deployment materials require written license approval.
 

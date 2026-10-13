@@ -1,33 +1,15 @@
 # License Access Notice
 
-The public materials in this repository are provided for review and discussion only. They are not an open-source grant to The Coherence Engine™ core technology.
+The public materials support review and discussion. Protected engine materials require a separate written license.
 
-Protected materials require written license approval before access, download, execution, deployment, modification, resale, publication, or derivative use.
+The scoped integration example files listed in [examples/LICENSE](examples/LICENSE) have an explicit MIT license. This exception permits customer integration work without granting rights to protected engine technology. Other file-specific licenses apply only to their stated scope.
 
-Protected materials include, without limitation:
+Protected materials include The Coherence Engine™ implementation, runnable digital twins, operator logic, weights, thresholds, calibration rules, private benchmark packages, datasets, adapters, scoring pipelines, and commercial engine containers or modules. Public descriptions and schemas do not expose these implementations.
 
-- Runnable digital twins
-- The Coherence Engine™ implementation
-- Operator logic, weights, thresholds, and calibration rules
-- Full benchmark reproduction packages
-- Private datasets, traces, adapters, and scoring pipelines
-- Commercial deployment containers, APIs, modules, or pilot packages
-- Field-specific implementation guides
-- RecoverMargins and enterprise workflow twins
-- Medical, biometric, public-health, and physiological signal twins
-- Infrastructure, energy, semiconductor, transportation, and data-center twins
-- Regenerative, biohybrid, quantum, robotics, habitat, and frontier-system twins
+Public concept descriptions span industrial, enterprise, biomedical, regenerative, and frontier applications. Executable availability and evidence vary by application. Medical, biometric, regulated, and high-value infrastructure access may require additional review.
 
-Public materials may summarize evidence, describe architecture, and show non-executable demonstrations. They are intentionally separated from protected implementation details.
+To request licensed access, identify the organization, intended use, requested application, data/environment, evaluation or deployment scope, and proposed publication. The written agreement must establish permitted execution, access, copying, modification, term, fees, disclosure, and any commercial or field-specific rights.
 
-The public inventory is selected, not exhaustive. Medical, biometric, regulated, frontier-physics, and high-value infrastructure materials may require reviewer-gated, sponsor-gated, or private access even when public concept descriptions exist.
+All rights to protected materials are reserved except as expressly granted in a separate agreement. No core patent-use, production, resale, sublicensing, or exclusivity rights are granted by this notice.
 
-To request licensed access, identify:
-
-- Requested digital twin or domain
-- Organization and intended use
-- Dataset or deployment environment
-- Evaluation, pilot, commercial, research, or regulatory context
-- Whether publication or public performance claims are intended
-
-All rights are reserved unless a separate written license says otherwise.
+[Controlled evaluation](commercial/PILOT.md) | [Readiness](COMMERCIAL_READINESS.md)
