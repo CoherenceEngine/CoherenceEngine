@@ -1,4 +1,4 @@
-# Coherence Engine™ · Allison Hensgen
+# The Coherence Engine™ · Allison Hensgen
 
 **See what individual signals can't reveal.**
 
